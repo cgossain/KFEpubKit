@@ -25,8 +25,18 @@
 #import <Foundation/Foundation.h>
 #import "KFEpubConstants.h"
 
-@interface KFEpubContentModel : NSObject
+typedef NS_ENUM(NSInteger, KFEpubContentModelLayoutRendition) {
+    KFEpubContentModelLayoutRenditionReflowable = 1, // spine elements do not have a fixed layout
+    KFEpubContentModelLayoutRenditionPrePaginated,
+};
 
+typedef NS_ENUM(NSInteger, KFEpubContentModelSpreadRendition) {
+    KFEpubContentModelSpreadRenditionNone = 1,
+    KFEpubContentModelSpreadRenditionBoth,
+    KFEpubContentModelSpreadRenditionAuto,
+};
+
+@interface KFEpubContentModel : NSObject
 
 @property (nonatomic) KFEpubKitBookType bookType;
 @property (nonatomic) KFEpubKitBookEncryption bookEncryption;
@@ -37,5 +47,7 @@
 @property (nonatomic, strong) NSArray *spine;
 @property (nonatomic, strong) NSArray *guide;
 
+@property (nonatomic, readonly) KFEpubContentModelLayoutRendition layoutRendition;
+@property (nonatomic, readonly) KFEpubContentModelSpreadRendition spreadRendition;
 
 @end
