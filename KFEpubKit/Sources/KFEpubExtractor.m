@@ -22,8 +22,8 @@
 // THE SOFTWARE.
 
 #import "KFEpubExtractor.h"
-#import <SSZipArchive.h>
 #import "KFEpubConstants.h"
+#import <ZipArchive/ZipArchive.h>
 
 
 @interface KFEpubExtractor ()
@@ -65,7 +65,7 @@
             __block BOOL didSucceed;
             [self.extractingQueue addOperationWithBlock:^{
                 
-                didSucceed = [SSZipArchive unzipFileAtPath:self.epubURL.path toDestination:self.destinationURL.path];
+                didSucceed = [Main unzipFileAtPath:self.epubURL.path toDestination:self.destinationURL.path];
             }];
             [self.extractingQueue addOperationWithBlock:^{
                 
@@ -79,7 +79,7 @@
         }
         else
         {
-            BOOL didSucceed = [SSZipArchive unzipFileAtPath:self.epubURL.path toDestination:self.destinationURL.path];
+            BOOL didSucceed = [Main unzipFileAtPath:self.epubURL.path toDestination:self.destinationURL.path];
             [self doneExtracting:@(didSucceed)];
             return YES;
         }

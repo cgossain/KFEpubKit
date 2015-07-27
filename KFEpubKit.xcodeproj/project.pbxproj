@@ -66,7 +66,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F12443EF7044523A4B55C0A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		1D4CF0421748F173006D3281 /* KFEpubKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KFEpubKit.podspec; sourceTree = "<group>"; };
 		1D4CF0431748F25E006D3281 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1D4FFAD817280EC500AA5D35 /* KFEpubExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFEpubExtractor.h; path = Sources/KFEpubExtractor.h; sourceTree = "<group>"; };
@@ -127,11 +126,14 @@
 		1DEB65861727FC6700FDBDC3 /* KFEpubParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFEpubParser.m; path = Sources/KFEpubParser.m; sourceTree = "<group>"; };
 		1DEB65891727FFEE00FDBDC3 /* KFEpubContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFEpubContentModel.h; path = Sources/KFEpubContentModel.h; sourceTree = "<group>"; };
 		1DEB658A1727FFEE00FDBDC3 /* KFEpubContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFEpubContentModel.m; path = Sources/KFEpubContentModel.m; sourceTree = "<group>"; };
+		3470B5BE803E7CC2EBA67FD7 /* Pods-KFEpubKit iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit iOS/Pods-KFEpubKit iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3A2E2BD4A657D1480A269F7B /* Pods-KFEpubKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit/Pods-KFEpubKit.release.xcconfig"; sourceTree = "<group>"; };
+		3C4983841DD879CDF055EF59 /* Pods-KFEpubKit Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit Tests/Pods-KFEpubKit Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4878F171D94147409B51FE24 /* libPods-KFEpubKit Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFEpubKit Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B4408E124484AB6BF398E61 /* Pods-KFEpubKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit.xcconfig"; path = "Pods/Pods-KFEpubKit.xcconfig"; sourceTree = SOURCE_ROOT; };
-		6D6E7C6C6E6C4380AA7FA32D /* Pods-KFEpubKit Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit Tests.xcconfig"; path = "Pods/Pods-KFEpubKit Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		53AA9D2C216AAC454C1F3AF8 /* Pods-KFEpubKit Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit Tests/Pods-KFEpubKit Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5995ABE7DB567576FEA15A47 /* Pods-KFEpubKit iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit iOS/Pods-KFEpubKit iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7B9236CF0F044D65B0827915 /* libPods-KFEpubKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFEpubKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BF7E8FE7DF44BF2859F7881 /* Pods-KFEpubKit iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit iOS.xcconfig"; path = "Pods/Pods-KFEpubKit iOS.xcconfig"; sourceTree = SOURCE_ROOT; };
+		B4109AD662E73676974D78A7 /* Pods-KFEpubKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFEpubKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFEpubKit/Pods-KFEpubKit.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC03826CD99431A927FC302 /* libPods-KFEpubKit iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFEpubKit iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -273,10 +275,7 @@
 				1D7174FD176900FC00CA1E90 /* KFEpubKit iOS */,
 				1DEB65621727E18800FDBDC3 /* Frameworks */,
 				1DEB65611727E18800FDBDC3 /* Products */,
-				0F12443EF7044523A4B55C0A /* Pods.xcconfig */,
-				6D6E7C6C6E6C4380AA7FA32D /* Pods-KFEpubKit Tests.xcconfig */,
-				5B4408E124484AB6BF398E61 /* Pods-KFEpubKit.xcconfig */,
-				9BF7E8FE7DF44BF2859F7881 /* Pods-KFEpubKit iOS.xcconfig */,
+				2CAA6A2518F4839E96096E73 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -367,6 +366,19 @@
 				1DEB65861727FC6700FDBDC3 /* KFEpubParser.m */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		2CAA6A2518F4839E96096E73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4109AD662E73676974D78A7 /* Pods-KFEpubKit.debug.xcconfig */,
+				3A2E2BD4A657D1480A269F7B /* Pods-KFEpubKit.release.xcconfig */,
+				3C4983841DD879CDF055EF59 /* Pods-KFEpubKit Tests.debug.xcconfig */,
+				53AA9D2C216AAC454C1F3AF8 /* Pods-KFEpubKit Tests.release.xcconfig */,
+				3470B5BE803E7CC2EBA67FD7 /* Pods-KFEpubKit iOS.debug.xcconfig */,
+				5995ABE7DB567576FEA15A47 /* Pods-KFEpubKit iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,7 +529,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-KFEpubKit Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFEpubKit Tests/Pods-KFEpubKit Tests-resources.sh\"\n";
 		};
 		19578244592F4519920EF34C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -531,7 +543,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-KFEpubKit iOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFEpubKit iOS/Pods-KFEpubKit iOS-resources.sh\"\n";
 		};
 		1D4FFAF017290D9800AA5D35 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -545,7 +557,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFEpubKit Tests/Pods-KFEpubKit Tests-resources.sh\"\n";
 		};
 		260B99BE768A4654AC75D944 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -573,7 +585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFEpubKit/Pods-KFEpubKit-resources.sh\"\n";
 		};
 		5ADD9D794FC542E7ABCA2357 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -587,7 +599,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-KFEpubKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFEpubKit/Pods-KFEpubKit-resources.sh\"\n";
 		};
 		622A460046AD498B9C7DA289 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -739,7 +751,7 @@
 /* Begin XCBuildConfiguration section */
 		1D4FFAF217290D9800AA5D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D6E7C6C6E6C4380AA7FA32D /* Pods-KFEpubKit Tests.xcconfig */;
+			baseConfigurationReference = 3C4983841DD879CDF055EF59 /* Pods-KFEpubKit Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KFEpubKit/KFEpubKit.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -754,7 +766,7 @@
 		};
 		1D4FFAF317290D9800AA5D35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D6E7C6C6E6C4380AA7FA32D /* Pods-KFEpubKit Tests.xcconfig */;
+			baseConfigurationReference = 53AA9D2C216AAC454C1F3AF8 /* Pods-KFEpubKit Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KFEpubKit/KFEpubKit.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -769,7 +781,7 @@
 		};
 		1D717518176900FC00CA1E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BF7E8FE7DF44BF2859F7881 /* Pods-KFEpubKit iOS.xcconfig */;
+			baseConfigurationReference = 3470B5BE803E7CC2EBA67FD7 /* Pods-KFEpubKit iOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -789,7 +801,7 @@
 		};
 		1D717519176900FC00CA1E90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BF7E8FE7DF44BF2859F7881 /* Pods-KFEpubKit iOS.xcconfig */;
+			baseConfigurationReference = 5995ABE7DB567576FEA15A47 /* Pods-KFEpubKit iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -870,7 +882,7 @@
 		};
 		1DEB657E1727E18800FDBDC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B4408E124484AB6BF398E61 /* Pods-KFEpubKit.xcconfig */;
+			baseConfigurationReference = B4109AD662E73676974D78A7 /* Pods-KFEpubKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KFEpubKit/KFEpubKit.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -885,7 +897,7 @@
 		};
 		1DEB657F1727E18800FDBDC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B4408E124484AB6BF398E61 /* Pods-KFEpubKit.xcconfig */;
+			baseConfigurationReference = 3A2E2BD4A657D1480A269F7B /* Pods-KFEpubKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KFEpubKit/KFEpubKit.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
