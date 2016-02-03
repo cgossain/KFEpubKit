@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "5.1"
   s.osx.deployment_target = "10.7"
   s.source_files     =  'KFEpubKit/Sources/*.{h,m}', 'KFEpubKit/LICENSE.txt'
-  s.dependency 'SSZipArchive'
+  s.dependency 'SSZipArchive', '~> 1.0.1'
   s.dependency 'KissXML'
   s.library      = 'xml2'
   s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
