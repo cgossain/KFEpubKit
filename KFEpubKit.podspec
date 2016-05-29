@@ -10,28 +10,29 @@ Pod::Spec.new do |s|
   s.requires_arc     =  true
   s.ios.deployment_target = "5.1"
   s.osx.deployment_target = "10.7"
-  s.source_files     =  'KFEpubKit/Sources/*.{h,m}', 'KFEpubKit/LICENSE.txt'
-  s.dependency 'SSZipArchive', '~> 1.0.1'
-  s.library      = 'xml2'
-  s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 
-  s.default_subspec = 'Standard'
+  s.default_subspecs = 'Standard'
 
-  # s.subspec 'Core' do |ss|
-  #   # ss.dependency 'SSZipArchive', '~> 1.0.1'
-  #   # ss.source_files     =  'Sources/*.{h,m}', 'KFEpubKit/LICENSE.txt'
-  #   # ss.library      = 'xml2'
-  #   # ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
-  # end
+  s.subspec 'Core' do |ss|
+    ss.dependency   'SSZipArchive', '~> 1.0.1'
+    ss.source_files = 'KFEpubKit/Sources/*.{h,m}', 'KFEpubKit/LICENSE.txt'
+    ss.library      = 'xml2'
+    ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+  end
 
   s.subspec 'Standard' do |ss|
-    # ss.dependency 'KFEpubKit/Core'
+    ss.dependency 'KFEpubKit/Core'
     ss.dependency 'KissXML'
   end
 
   s.subspec 'Framework' do |ss|
     ss.ios.deployment_target = "8.0"
-    # ss.dependency 'KFEpubKit/Core'
-    ss.dependency 'KissXML/libxml_module'
+    ss.dependency 'KFEpubKit/Core'
+    ss.dependency   'KissXML/libxml_module'
+    ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/KissXML',
+                        'OTHER_CFLAGS' => '$(inherited) -DDDXML_LIBXML_MODULE_ENABLED=1',
+                        'OTHER_SWIFT_FLAGS' => '$(inherited) -DDDXML_LIBXML_MODULE_ENABLED'
+}
+
   end
 end
