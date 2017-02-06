@@ -48,6 +48,8 @@
 
 - (NSArray *)spineFromDocument:(DDXMLDocument *)document;
 
+- (BOOL)isRTLFromDocument:(DDXMLDocument *)document;
+
 - (NSDictionary *)manifestFromDocument:(DDXMLDocument *)document;
 
 - (NSArray *)guideFromDocument:(DDXMLDocument *)document;

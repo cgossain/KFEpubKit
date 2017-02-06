@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, KFEpubContentModelSpreadRendition) {
 @property (nonatomic, strong) NSDictionary *manifest;
 @property (nonatomic, strong) NSArray *spine;
 @property (nonatomic, strong) NSArray *guide;
+@property (nonatomic, assign) BOOL isRTL;
 
 @property (nonatomic, readonly) KFEpubContentModelLayoutRendition layoutRendition;
 @property (nonatomic, readonly) KFEpubContentModelSpreadRendition spreadRendition;
