@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.source           =  { :git => 'https://github.com/cgossain/KFEpubKit.git', :tag => s.version.to_s }
   s.framework        =  'Foundation'
   s.requires_arc     =  true
-  s.ios.deployment_target = "5.1"
-  s.osx.deployment_target = "10.7"
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.7'
 
   s.default_subspecs = 'Standard'
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Framework' do |ss|
-    ss.ios.deployment_target = "8.0"
+    ss.ios.deployment_target = '8.0'
     ss.dependency 'CG-KFEpubKit/Core'
     # ss.dependency   'KissXML/libxml_module'
     ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/KissXML',
