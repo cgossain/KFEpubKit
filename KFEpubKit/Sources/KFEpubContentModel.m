@@ -25,23 +25,4 @@
 
 @implementation KFEpubContentModel
 
-- (KFEpubContentModelLayoutRendition)layoutRendition {
-    NSString *layout = self.metaData[@"meta-rendition:layout"];
-    if ([layout isEqualToString:@"pre-paginated"]) {
-        return KFEpubContentModelLayoutRenditionPrePaginated;
-    }
-    return KFEpubContentModelLayoutRenditionReflowable;
-}
-
-- (KFEpubContentModelSpreadRendition)spreadRendition {
-    NSString *layout = self.metaData[@"meta-rendition:spread"];
-    if ([layout isEqualToString:@"none"]) {
-        return KFEpubContentModelSpreadRenditionNone;
-    }
-    else if ([layout isEqualToString:@"both"]) {
-        return KFEpubContentModelSpreadRenditionBoth;
-    }
-    return KFEpubContentModelSpreadRenditionAuto;
-}
-
 @end
