@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             =  'CG-KFEpubKit'
-  s.version          =  '1.0'
+  s.version          =  '1.0.1'
   s.license          =  { :type => 'MIT', :file => 'LICENSE.txt' }
   s.summary          =  'An Objective-C epub extracting and parsing framework for OSX and iOS.'
   s.homepage         =  'https://pods.kf-interactive.com'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.dependency   'SSZipArchive', '~> 1.0.1'
-    ss.dependency   'KissXML', '~> 5.1.0'
+    ss.dependency   'KissXML', '~> 5.2.2'
     ss.source_files = 'KFEpubKit/Sources/*.{h,m}', 'KFEpubKit/LICENSE.txt'
     ss.library      = 'xml2'
     ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
